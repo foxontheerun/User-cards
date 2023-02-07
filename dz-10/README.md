@@ -1,5 +1,5 @@
 # User Cards
-##Домашнее задание с курса
+Домашнее задание с курса
 
 Задание:
 Необходимо проработать взаимодействие с сервисом JSONPlaceholder - Free Fake REST API (typicode.com)
