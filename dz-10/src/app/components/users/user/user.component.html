@@ -1,1 +1,31 @@
-<p>user works!</p>
+<div (click)="toggle()" class="user">
+    <h3>{{i + '. ' + username}}</h3>
+    <div class="d-flex justify-content-between">
+        <div>Name:</div>
+        <div>{{name}}</div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div>Company: </div>
+        <div>{{company}}</div>
+    </div>
+
+    <div *ngIf="isActive" class="d-flex flex-column">
+        <div class="d-flex justify-content-between">
+            <div>City: </div>
+            <div>{{city}}</div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>Email: </div>
+            <div>{{email}}</div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>Phone: </div>
+            <div>{{phone}}</div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>Website: </div>
+            <div><a  href="https://{{website}}" class="badge badge-primary">https://{{website}}</a></div>
+        </div>
+        <a [routerLink]="['/todos', id]"><button type="button" class="btn btn-light mt-2">View User Tasks</button></a>
+    </div>
+</div>
